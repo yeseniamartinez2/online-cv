@@ -1,0 +1,35 @@
+@import "../variables";
+
+.art-educacion {
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 15px;
+  grid-template-areas:
+    "logo puesto"
+    "logo detalles"
+    "logo fechas";
+  margin-bottom: 15px;
+
+  img {
+    grid-area: logo;
+    align-self: center;
+  }
+
+  h3 {
+    grid-area: puesto;
+    margin: 0;
+  }
+
+  .fechas {
+    grid-area: fechas;
+  }
+
+  a {
+    color: $dark-blue;
+  }
+
+  a:hover {
+    color: $yellow;
+  }
+}

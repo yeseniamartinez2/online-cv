@@ -1,0 +1,31 @@
+.art-experiencia {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 15px;
+  grid-template-areas:
+    "logo puesto"
+    "logo detalles"
+    ". descripcion";
+  margin-bottom: 12px;
+  img {
+    grid-area: logo;
+  }
+
+  h3 {
+    grid-area: puesto;
+    margin: 0;
+  }
+
+  .detalles {
+    grid-area: detalles;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  ul {
+    grid-area: descripcion;
+    margin-top: 5px;
+  }
+}

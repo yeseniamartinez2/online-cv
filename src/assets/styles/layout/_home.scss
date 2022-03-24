@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  column-gap: 30px;
+  row-gap: 20px;
+  grid-template-areas:
+    "header header"
+    "intro intro"
+    "experiencia aside"
+    "educacion aside"
+    "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+.intro {
+  grid-area: intro;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 27% 15px 27%;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.sec-experiencia {
+  grid-area: experiencia;
+  margin-left: 18%;
+}
+
+.sec-educacion {
+  grid-area: educacion;
+  margin-left: 18%;
+}
+
+.sec-destrezas,
+.sec-idiomas {
+  grid-area: aside;
+  margin-right: 18%;
+}
+
+.uoc-footer {
+  grid-area: footer;
+  margin-top: 1.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  height: 5vh;
+}

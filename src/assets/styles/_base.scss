@@ -1,0 +1,81 @@
+@import "./variables";
+
+html,
+body {
+  background: $background-white;
+  font-family: $font-default;
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+header {
+  background-color: $light-purple;
+  box-shadow: 2px 5px 10px 5px rgba(0, 0, 0, 0.055);
+}
+
+h1 {
+  color: $dark-purple;
+  font-family: $font-headers;
+}
+h2 {
+  color: $color-text;
+  font-family: $font-headers;
+  margin-bottom: 10px;
+}
+
+h3,
+h4 {
+  font-family: $font-default;
+  color: $color-text;
+  margin: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: $color-text;
+}
+
+li {
+  color: $color-text;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-purple;
+}
+
+a:hover {
+  color: $yellow;
+}
+span,
+time {
+  color: $color-text;
+}
+section {
+  border-style: solid;
+  border-width: 1.4px;
+  border-radius: 3px;
+  border-color: $border-color;
+  padding: 10px 30px 20px 30px;
+}

@@ -1,0 +1,56 @@
+@import "../variables";
+
+header {
+  padding: 0 25% 0 25%;
+  height: 45vh;
+  min-height: 300px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 2fr 1fr;
+  column-gap: 40px;
+  grid-template-areas:
+    "profile name"
+    "profile buttons";
+  img {
+    grid-area: profile;
+    border: 5px solid $dark-purple;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    justify-self: start;
+    align-self: center;
+  }
+
+  h1 {
+    grid-area: name;
+    font-family: costa, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3rem;
+    max-width: 400px;
+    line-height: 60px;
+    justify-self: end;
+    align-self: end;
+  }
+
+  .buttons {
+    grid-area: buttons;
+    width: 100%;
+    display: flex;
+    column-gap: 20px;
+  }
+
+  a {
+    border-style: solid;
+    padding: auto;
+    border-width: 1.5px;
+    border-radius: 15px;
+    width: 190px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+    font-family: urw-form, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
