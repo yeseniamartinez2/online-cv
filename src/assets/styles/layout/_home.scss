@@ -1,3 +1,4 @@
+@import "../variables";
 * {
   box-sizing: border-box;
 }
@@ -17,6 +18,10 @@ body {
 
 header {
   grid-area: header;
+  width: 100%;
+  padding: 0 25% 0 25%;
+  height: 30vh;
+  min-height: 300px;
 }
 
 .intro {
@@ -54,4 +59,41 @@ header {
   font-size: 0.75rem;
   text-align: center;
   height: 5vh;
+}
+@media (max-width: $tabletMaxWidth) {
+  header {
+    padding: 15px 10%;
+    height: 30vh;
+  }
+  .intro {
+    padding: 15px 10%;
+  }
+
+  .sec-experiencia,
+  .sec-educacion {
+    margin-left: 10%;
+  }
+
+  .sec-destrezas,
+  .sec-idiomas {
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: $mobileMaxWidth) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec-experiencia,
+  .sec-educacion {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .sec-destrezas,
+  .sec-idiomas {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }

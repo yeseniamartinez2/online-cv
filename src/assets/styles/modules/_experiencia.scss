@@ -10,6 +10,7 @@
   margin-bottom: 12px;
   img {
     grid-area: logo;
+    border-radius: 50%;
   }
 
   h3 {
@@ -27,5 +28,19 @@
   ul {
     grid-area: descripcion;
     margin-top: 5px;
+  }
+}
+
+@media (max-width: $mobileMaxWidth) {
+  .art-experiencia {
+    grid-template-columns: 40px auto;
+    column-gap: 18px;
+    grid-template-areas:
+      "logo puesto"
+      "logo detalles"
+      ". descripcion";
+  }
+  .detalles {
+    flex-direction: column;
   }
 }

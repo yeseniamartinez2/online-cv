@@ -1,9 +1,6 @@
 @import "../variables";
 
 header {
-  padding: 0 25% 0 25%;
-  height: 45vh;
-  min-height: 300px;
   display: grid;
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 2fr 1fr;
@@ -19,6 +16,8 @@ header {
     -moz-border-radius: 500px;
     justify-self: start;
     align-self: center;
+    width: 220px;
+    height: 220px;
   }
 
   h1 {
@@ -26,11 +25,11 @@ header {
     font-family: costa, sans-serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 3rem;
     max-width: 400px;
-    line-height: 60px;
+    line-height: 50px;
     justify-self: end;
     align-self: end;
+    min-width: 350px;
   }
 
   .buttons {
@@ -45,12 +44,39 @@ header {
     padding: auto;
     border-width: 1.5px;
     border-radius: 15px;
-    width: 190px;
+    width: 160px;
     height: 40px;
     line-height: 35px;
     text-align: center;
     font-family: urw-form, sans-serif;
     font-weight: 300;
     font-style: normal;
+  }
+}
+@media (max-width: $mobileMaxWidth) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 0;
+    img {
+      width: 170px;
+      height: 170px;
+      border-width: 4px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+      line-height: 35px;
+      align-self: center;
+    }
+  }
+
+  .buttons {
+    justify-content: center;
   }
 }

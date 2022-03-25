@@ -3,6 +3,13 @@
   border-color: none;
 
   h2 {
-    color: $dark-blue;
+    min-width: 500px;
+  }
+}
+
+@media (max-width: $mobileMaxWidth) {
+  .intro h2 {
+    width: 100%;
+    min-width: 200px;
   }
 }
