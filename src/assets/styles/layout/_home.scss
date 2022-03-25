@@ -1,3 +1,13 @@
+/**
+* El layout maneja la ubicación de elementos básicos 
+* y el margin y padding que varían según el tamaño de dispositivo.  
+*
+*
+*
+
+*/
+
+
 @import "../variables";
 * {
   box-sizing: border-box;
@@ -5,8 +15,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 5fr 3fr;
-  column-gap: 30px;
+  
   row-gap: 20px;
   grid-template-areas:
     "header header"
@@ -14,23 +23,28 @@ body {
     "experiencia aside"
     "educacion aside"
     "footer footer";
+    grid-template-columns: 5fr 3fr;
+    column-gap: 30px;
 }
 
 header {
   grid-area: header;
   width: 100%;
-  padding: 0 25% 0 25%;
   height: 30vh;
   min-height: 300px;
+  padding: 0 25% 0 25%;
+  
 }
 
 .intro {
-  grid-area: intro;
   display: flex;
+  grid-area: intro;
+  
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   padding: 15px 27% 15px 27%;
+  text-align: center;
+ 
 
   h2 {
     margin: 0;
@@ -55,15 +69,19 @@ header {
 
 .uoc-footer {
   grid-area: footer;
-  margin-top: 1.5rem;
-  font-size: 0.75rem;
-  text-align: center;
   height: 5vh;
+  margin-top: 1.5rem;
+  
+  font-size: 0.75rem;
+  
+  text-align: center;
+  
 }
 @media (max-width: $tabletMaxWidth) {
   header {
-    padding: 15px 10%;
     height: 30vh;
+    padding: 15px 10%;
+    
   }
   .intro {
     padding: 15px 10%;
@@ -87,8 +105,9 @@ header {
   }
   .sec-experiencia,
   .sec-educacion {
-    margin-left: 5px;
     margin-right: 5px;
+    margin-left: 5px;
+    
   }
 
   .sec-destrezas,

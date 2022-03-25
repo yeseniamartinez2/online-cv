@@ -1,21 +1,23 @@
 .sec-destrezas {
   margin-bottom: 20px;
   ul {
-    list-style: none;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
+    padding: 0;
+    list-style: none;
+    
   }
 
   li {
-    border-style: solid;
-    border-color: $border-color;
+    margin: 3px;
     padding: 5px;
     border-width: 1px;
+    border-style: solid;
     border-radius: 10px;
+    border-color: $border-color;
     line-height: 20px;
-    margin: 3px;
+    
   }
 }
 

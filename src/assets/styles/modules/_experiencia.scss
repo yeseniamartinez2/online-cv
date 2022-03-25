@@ -1,13 +1,14 @@
 .art-experiencia {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto;
-  column-gap: 15px;
   grid-template-areas:
     "logo puesto"
     "logo detalles"
     ". descripcion";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;  
   margin-bottom: 12px;
+  column-gap: 15px;
+ 
   img {
     grid-area: logo;
     border-radius: 50%;
@@ -19,8 +20,8 @@
   }
 
   .detalles {
-    grid-area: detalles;
     display: flex;
+    grid-area: detalles;
     justify-content: space-between;
     width: 100%;
   }
@@ -33,12 +34,12 @@
 
 @media (max-width: $mobileMaxWidth) {
   .art-experiencia {
-    grid-template-columns: 40px auto;
-    column-gap: 18px;
     grid-template-areas:
       "logo puesto"
       "logo detalles"
       ". descripcion";
+    grid-template-columns: 40px auto;
+    column-gap: 18px;
   }
   .detalles {
     flex-direction: column;
