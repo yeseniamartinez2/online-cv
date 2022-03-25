@@ -1,4 +1,4 @@
-.art-experiencia {
+.sec-experiencia__article {
   display: grid;
   grid-template-areas:
     "logo puesto"
@@ -33,7 +33,8 @@
 }
 
 @media (max-width: $mobileMaxWidth) {
-  .art-experiencia {
+  
+  .sec-experiencia__article {
     grid-template-areas:
       "logo puesto"
       "logo detalles"
@@ -41,6 +42,7 @@
     grid-template-columns: 40px auto;
     column-gap: 18px;
   }
+  
   .detalles {
     flex-direction: column;
   }

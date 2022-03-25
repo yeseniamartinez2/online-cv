@@ -9,6 +9,7 @@
 
 
 @import "../variables";
+
 * {
   box-sizing: border-box;
 }
@@ -78,11 +79,13 @@ header {
   
 }
 @media (max-width: $tabletMaxWidth) {
+
   header {
     height: 30vh;
     padding: 15px 10%;
     
   }
+
   .intro {
     padding: 15px 10%;
   }
@@ -99,10 +102,12 @@ header {
 }
 
 @media (max-width: $mobileMaxWidth) {
+
   body {
     display: flex;
     flex-direction: column;
   }
+
   .sec-experiencia,
   .sec-educacion {
     margin-right: 5px;

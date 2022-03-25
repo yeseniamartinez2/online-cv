@@ -1,4 +1,11 @@
 {
   "extends": ["stylelint-config-recommended-scss", "stylelint-config-recess-order", "stylelint-config-property-sort-order-smacss"],
-  "rules": {}
+  "rules": {
+    "string-quotes": "double",
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "no-irregular-whitespace": true,
+    "rule-empty-line-before": "always"
+
+  }
 }

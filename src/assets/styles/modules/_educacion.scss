@@ -1,8 +1,7 @@
 @import "../variables";
 
-.art-educacion {
+.sec-educacion__article {
   display: grid;
- 
   grid-template-areas:
     "logo puesto"
     "logo detalles"
@@ -12,8 +11,6 @@
   margin-bottom: 15px;
   column-gap: 15px;
   
- 
-
   img {
     grid-area: logo;
     align-self: center;
@@ -29,11 +26,11 @@
     grid-area: fechas;
   }
 
-  a {
+  .a-titulo {
     color: $dark-blue;
   }
 
-  a:hover {
+  .a-titulo:hover {
     color: $yellow;
   }
 }

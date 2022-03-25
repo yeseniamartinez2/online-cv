@@ -27,22 +27,17 @@ header {
     align-self: end;
     min-width: 350px;
     max-width: 400px;
-    
     font-family: costa, sans-serif;
     font-style: normal;
     font-weight: 300;
-    
     line-height: 50px;
     justify-self: end;
-    
   }
 
   .buttons {
     display: flex;
     grid-area: buttons;
-    
     width: 100%;
-    
     column-gap: 20px;
   }
 
@@ -53,16 +48,16 @@ header {
     border-width: 1.5px;
     border-style: solid;    
     border-radius: 15px;
-    
     font-family: urw-form, sans-serif;
     font-style: normal;
     font-weight: 300;
     line-height: 35px;
     text-align: center;
-    
   }
 }
+
 @media (max-width: $mobileMaxWidth) {
+  
   header {
     display: flex;
     flex-direction: column;
@@ -70,6 +65,7 @@ header {
     justify-content: center;
     height: 50vh;
     padding: 0;
+
     img {
       width: 170px;
       height: 170px;
@@ -80,13 +76,8 @@ header {
       align-self: center;
       width: 100%;
       font-size: 2rem;
-      
-      
       line-height: 35px;
-      text-align: center;
-      
-      
-      
+      text-align: center;    
     }
   }
 

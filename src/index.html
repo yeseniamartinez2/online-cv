@@ -1,27 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="stylesheet" href="./assets/styles/main.scss" />
     <link rel="stylesheet" rel="preload" as="font" href="https://use.typekit.net/fzt2usj.css" />
     <!-- do not remove this line! -->
     <title>Yesenia Martínez Acevedo</title>
   </head>
   <body>
     <header>
-      
       <img
         src="./assets/images/Photo2018-resized.avif"
     
         alt="Yesenia Martínez Acevedo"
-      />
+      >
       <h1>Yesenia Martínez Acevedo</h1>
 
       <div class="buttons">
         <a
-          href="./assets/CV-MARCH2022-ESP-WD.pdf"
+          href="./assets/files/CV-MARCH2022-ESP-WD.pdf"
           download="YeseniaMartinezAcevedo_CV"
           >Descargar CV</a
         >
@@ -40,13 +39,13 @@
     </section>
     <section class="sec-experiencia">
       <h2>Experiencia</h2>
-      <article class="art-experiencia">
+      <article class="sec-experiencia__article">
         <img
           src="./assets/images/cdr-logo.jpg"
           height="50"
           width="50"
           alt="Logo de la Cámara de Representantes de Puerto Rico"
-        />
+        >
         <h3>Full Stack Developer</h3>
         <div class="detalles">
           <span>Cámara de Representantes, San Juan, Puerto Rico</span>
@@ -74,13 +73,13 @@
           </li>
         </ul>
       </article>
-      <article class="art-experiencia">
+      <article class="sec-experiencia__article">
         <img
           src="./assets/images/capgemini-logo.jpg"
           height="50"
           width="50"
           alt="Logo de Capgemini"
-        />
+        >
         <h3>Data Scientist</h3>
         <div class="detalles">
           <span>Capgemini, Toulouse, France</span>
@@ -105,13 +104,13 @@
           </li>
         </ul>
       </article>
-      <article class="art-experiencia">
+      <article class="sec-experiencia__article">
         <img
           src="./assets/images/mmm-logo.jpg"
           height="50"
           width="50"
           alt="Logo de MMM"
-        />
+        >
         <h3>Business Analyst</h3>
         <div class="detalles">
           <span> MMM Holdings LLC , San Juan, Puerto Rico</span>
@@ -137,13 +136,13 @@
           </li>
         </ul>
       </article>
-      <article class="art-experiencia">
+      <article class="sec-experiencia__article">
         <img
           src="./assets/images/censo-logo.jpg"
           height="50"
           width="50"
           alt="Logo del U.S. Census Bureau"
-        />
+        >
         <h3>Statistician Trainee</h3>
         <div class="detalles">
           <span>U.S. Census Bureau, Washington D.C.</span>
@@ -174,15 +173,16 @@
     </section>
     <section class="sec-educacion">
       <h2>Educación</h2>
-      <article class="art-educacion">
+      <article class="sec-educacion__article">
         <img
           src="./assets/images/uoc-logo.jpg"
           height="50"
           width="50"
           alt="Logo de la Universitat Oberta de Catalunya"
-        />
+        >
         <h3>Universitat Oberta de Catalunya</h3>
-        <a
+        <a 
+          class="a-titulo"
           href="https://estudios.uoc.edu/es/masters-universitarios/desarrollo-sitios-aplicaciones-web/presentacion"
           >Máster universitario de Desarrollo de Sitios y Aplicaciones Web</a
         >
@@ -191,15 +191,16 @@
           <time datetime="2022-06-30">jun. 2022</time>
         </div>
       </article>
-      <article class="art-educacion">
+      <article class="sec-educacion__article">
         <img
           src="./assets/images/utc-logo.jpg"
           height="50"
           width="50"
           alt="Logo de la Université Toulouse 1 Capitole"
-        />
+        >
         <h3>Université Toulouse 1 Capitole</h3>
         <a
+          class="a-titulo"
           href="https://miage.ut-capitole.fr/international/master-innovative-information-systems-2is-/master-2is-innovative-information-systems--611942.kjsp"
           >Méthodes informatiques appliquées à la gestion des entreprises
           (MIAGE)
@@ -209,15 +210,16 @@
           <time datetime="2020-08-30">ago. 2020</time>
         </div>
       </article>
-      <article class="art-educacion">
+      <article class="sec-educacion__article">
         <img
           src="./assets/images/uprm-logo.jpg"
           height="50"
           width="50"
           alt="Logo de la Universidad de Puerto Rico, Recinto de Mayagüez"
-        />
+        >
         <h3>Universidad de Puerto Rico, Recinto de Mayagüez</h3>
         <a
+          class="a-titulo"
           href="https://www.uprm.edu/adem/wp-content/uploads/sites/112/2020/10/CURRICULO-ADEM-SICI.pdf"
           >Grado en Administración de Empresas, Concentración en Sistemas de
           Información
@@ -231,9 +233,9 @@
     <aside>
       <section class="sec-destrezas">
         <h2>Destrezas</h2>
-        <article class="art-destrezas">
+        <article class="sec-desctrezas__article">
           <h4>Web Development</h4>
-          <ul>
+          <ul >
             <li>Javascript</li>
             <li>Typescript</li>
             <li>React</li>
@@ -243,7 +245,7 @@
             <li>Mongo</li>
           </ul>
         </article>
-        <article class="art-destrezas">
+        <article class="sec-desctrezas__article">
           <h4>Data Science</h4>
           <ul>
             <li>Python</li>
