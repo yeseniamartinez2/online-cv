@@ -16,7 +16,6 @@
 
 body {
   display: grid;
-  
   row-gap: 20px;
   grid-template-areas:
     "header header"
@@ -106,6 +105,11 @@ header {
   body {
     display: flex;
     flex-direction: column;
+  }
+
+  header {
+    height: 57vh;
+    padding: 0;
   }
 
   .sec-experiencia,
